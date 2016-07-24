@@ -22,3 +22,14 @@ int main(int argc, char* argv[]){
 
 	return 0;
 }
+
+/*
+ * new一个新对象
+ * 	 内存分配(operator new)
+ *	 调用构造函数
+ * delete释放一个对象
+ *	 调用析构函数
+ *	 释放内存(operator delete)
+ *
+ *
+ */
