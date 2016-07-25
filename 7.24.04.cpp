@@ -1,6 +1,6 @@
 /**
  * @file 7.24.04.cpp
- * @brief new,free
+ * @brief new,delete
  * @author LiWenGang
  * @date 2016-07-24
  */
@@ -12,7 +12,7 @@ int main(int argc, char* argv[]){
 	cout<<*p<<endl;
 	delete p;
 
-	int *q=new int(20);	//分配一个证书空间  4kB  同时完成赋值
+	int *q=new int(20);	//分配一个整数空间  4kB  同时完成赋值
 	cout<<*q<<endl;
 	delete q;
 
@@ -30,6 +30,4 @@ int main(int argc, char* argv[]){
  * delete释放一个对象
  *	 调用析构函数
  *	 释放内存(operator delete)
- *
- *
  */
