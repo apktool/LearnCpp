@@ -11,9 +11,7 @@ class Outer{
 	private:
 		class Inner{
 			public:
-				void Fun(){
-					cout<<"Inner::Fun ..."<<endl;
-				}
+				void Fun();
 		};
 	public:
 		Inner obj;
@@ -29,4 +27,8 @@ int main(int argc, char* argv[]){
 void Outer::Fun(){
 	cout<<"Outer::Fun ..."<<endl;
 	obj.Fun();
+}
+
+void Outer::Inner::Fun(){
+	cout<<"Innter::Fun ..."<<endl;
 }
