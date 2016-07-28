@@ -39,12 +39,12 @@ const Empty* Empty::operator&() const{
  * 空类默认产生的成员:
  *
  * class Empty { };
- * Empty(); 			// 默认构造函数
- * Empty( const Empty& );	// 默认拷贝构造函数
- * ~Empty(); 			// 默认析构函数
- * Empty& operator=( const Empty& );  // 默认赋值运算符
- * Empty* operator&();		               // 取址运算符
- * const Empty* operator&() const;	    // 取址运算符 const
+ * Empty(); 							// 默认构造函数
+ * Empty( const Empty& );				// 默认拷贝构造函数
+ * ~Empty(); 							// 默认析构函数
+ * Empty& operator=( const Empty& );	// 默认赋值运算符
+ * Empty* operator&();					// 取址运算符
+ * const Empty* operator&() const;		// 取址运算符 const
  *
  * 空类的所占内存大小为1KB
  */
