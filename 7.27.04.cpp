@@ -13,7 +13,8 @@ class CountedObject{
 	public:
 		CountedObject();
 		~CountedObject();
-		static int cnt;		//静态成员的引用性声明
+		static int cnt;		//静态成员的引用性声明，对于int和char型的，可以直接在引用性声明这里完成初始化操作，但其他类型不可以
+		static const int num; //对于static const的话，可以不需要“静态成员的定义性声明”，比较特殊
 };
 
 int CountedObject::cnt=0;	//静态成员的定义性声明
