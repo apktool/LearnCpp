@@ -1,6 +1,6 @@
 /**
  * @file 8.03.01.cpp
- * @brief 运算符重载|[]|+|+=
+ * @brief 运算符重载|[]|+|+=|<<
  * @author LiWenGang
  * @date 2016-08-03
  */
@@ -8,9 +8,11 @@
 #include<cstring>
 using std::cout;
 using std::endl;
+using std::ostream;
 
 class String{
 	friend String operator+ (const String& obj1, const String& obj2);
+	friend ostream& operator<< (ostream& os, const String& obj);
 	public:
 		String();
 		~String();
@@ -65,6 +67,8 @@ int main(int argc, char* argv[]){
 
 	obj3+=obj4;		//加等运算符重载|+=
 	obj3.DisPlay();
+
+	cout<<obj3<<endl;	//输出重定向运算符重载|<<
 	return 0;
 }
 
@@ -149,6 +153,11 @@ String& String::operator+= (const String& obj){
 	delete[] m_str;
 	m_str=newstr;
 	return *this;
+}
+
+ostream& operator<< (ostream& os, const String& obj){
+	os<<obj.m_str;
+	return os;
 }
 
 void String::DisPlay() const{
