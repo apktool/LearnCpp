@@ -1,6 +1,6 @@
 /**
  * @file 8.03.01.cpp
- * @brief 运算符重载|[]|+
+ * @brief 运算符重载|[]|+|+=
  * @author LiWenGang
  * @date 2016-08-03
  */
@@ -23,6 +23,8 @@ class String{
 		char& operator[] (const unsigned int index);
 		const char& operator[] (const unsigned int index) const;
 
+		String& operator+= (const String& obj);
+
 		bool operator! () const;
 
 		void DisPlay() const;
@@ -37,16 +39,16 @@ int main(int argc, char* argv[]){
 	String obj1(obj);
 	obj1.DisPlay();
 
-	String obj2=obj;
+	String obj2=obj;	//等号运算符重载|=
 	obj2.DisPlay();
 
 	String obj3;
-	obj3="hello latex";
+	obj3="hello latex";	//等号运算符重载|=
 	obj3.DisPlay();
 
 	String obj4("xxxxx");
 	bool notempty;
-	notempty=!obj4;
+	notempty=!obj4;	//非运算符重载|!
 	cout<<notempty<<endl;
 
 	char ch=obj[0];
@@ -58,8 +60,11 @@ int main(int argc, char* argv[]){
 	//obj5[0]='H';	//const修饰的类型不允许被修改，为了防止修改，引入了由const对[]限制的再次重载
 	obj5.DisPlay();
 
-	String obj6=obj5+obj4;
+	String obj6=obj5+obj4;	//等号运算符重载|+
 	obj6.DisPlay();
+
+	obj3+=obj4;		//加等运算符重载|+=
+	obj3.DisPlay();
 	return 0;
 }
 
@@ -93,6 +98,7 @@ String& String::operator= (const String& obj){
 	m_str=new char(len);
 	memset(m_str,0,len);
 	strcpy(m_str,obj.m_str);
+
 	return *this;
 }
 
@@ -126,6 +132,23 @@ String operator+ (const String& obj1, const String& obj2){
 	String tmp(newchar);
 	delete newchar;
 	return tmp;
+	/*
+	 * String str=	obj1;
+	 * str+=obj2;	//调用+=重载运算符
+	 * return str;
+	 */
+}
+
+String& String::operator+= (const String& obj){
+	int len=strlen(m_str)+strlen(obj.m_str)+1;
+	char* newstr=new char(len);
+	memset(newstr,0,len);
+	strcpy(newstr,m_str);
+	strcat(newstr,obj.m_str);
+	
+	delete[] m_str;
+	m_str=newstr;
+	return *this;
 }
 
 void String::DisPlay() const{
