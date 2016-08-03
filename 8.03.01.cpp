@@ -1,18 +1,21 @@
 /**
  * @file 8.03.01.cpp
- * @brief 运算符重载|[]|+|+=|<<
+ * @brief 运算符重载|[]|+|+=|<<|>>
  * @author LiWenGang
  * @date 2016-08-03
  */
 #include<iostream>
 #include<cstring>
 using std::cout;
+using std::cin;
 using std::endl;
 using std::ostream;
+using std::istream;
 
 class String{
 	friend String operator+ (const String& obj1, const String& obj2);
 	friend ostream& operator<< (ostream& os, const String& obj);
+	friend istream& operator>> (istream& os, String& obj);
 	public:
 		String();
 		~String();
@@ -69,6 +72,10 @@ int main(int argc, char* argv[]){
 	obj3.DisPlay();
 
 	cout<<obj3<<endl;	//输出重定向运算符重载|<<
+
+	String obj7;
+	cin>>obj7;		//输入重定向运算符重载|>>
+	cout<<obj7<<endl;
 	return 0;
 }
 
@@ -158,6 +165,13 @@ String& String::operator+= (const String& obj){
 ostream& operator<< (ostream& os, const String& obj){
 	os<<obj.m_str;
 	return os;
+}
+
+istream& operator>> (istream& is, String& obj){
+	char tmp[1024];
+	cin>>tmp;
+	obj=tmp;
+	return is;
 }
 
 void String::DisPlay() const{
