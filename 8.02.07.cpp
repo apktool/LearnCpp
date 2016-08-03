@@ -1,6 +1,6 @@
 /**
  * @file 8.02.07.cpp
- * @brief 赋值运算符重载(=)|String
+ * @brief 赋值运算符重载(=)|非运算符重载(!)|String
  * @author LiWenGang
  * @date 2016-08-03
  */
@@ -17,6 +17,7 @@ class String{
 		String(const String& obj);
 		String& operator= (const String& obj);
 		String& operator= (const char* str);
+		bool operator! () const;
 		void DisPlay();
 	private:
 		char* m_str;
@@ -36,6 +37,11 @@ int main(int argc, char* argv[]){
 	String obj3;
 	obj3="hello latex";
 	obj3.DisPlay();
+
+	String obj4("xxxxx");
+	bool notempty;
+	notempty=!obj4;
+	cout<<notempty<<endl;
 	return 0;
 }
 
@@ -79,6 +85,10 @@ String& String::operator= (const char* str){
 	memset(m_str,0,len);
 	strcpy(m_str,str);
 	return *this;
+}
+
+bool String::operator!() const{
+	return strlen(m_str)!=0;
 }
 
 void String::DisPlay(){
