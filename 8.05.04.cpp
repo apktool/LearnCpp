@@ -1,6 +1,6 @@
 /**
  * @file 8.05.04.cpp
- * @brief 派生类到基类的转换
+ * @brief 派生类到基类的转换|基类到派生类的转换
  * @author LiWenGang
  * @date 2016-08-05
  */
@@ -54,6 +54,12 @@ int main(int argc, char* argv[]){
 	pe=reinterpret_cast<Employee*>(&m2);
 	//e1=m2;			//私有或保护继承的时候，派生类对象无法转化为基类对象。
 	//e1=reinterpret_cast<Employee>(m2);	//即使类型强制转换也不行
+	
+	//pm=pe;		//基类指针不能转换为派生类指针
+	pm=reinterpret_cast<Manager*>(pe);	//基类指针可以强制转换为派生类指针，但是不安全。
+										//注：这种转换与继承方式无关
+	//m1=e1;		//基类对象不能转换为派生类对象，即使强制转换也不行
+					//如果一定要实现这种转换的话，可以考虑使用转换构造函数；
 	return 0;
 }
 
@@ -72,6 +78,12 @@ Manager::Manager(const string& name, int age, int deptno, int level):Employee(na
  * 当派生类以private/protected方式继承基类时
  * 	派生类对象指针（引用）转化为基类对象指针（引用）需要强制类型转化，但不能使用static_cast，要用reinterpret_cast
  * 	不能把派生类对象强制转换为基类对象
+ */
+
+/*
+ * 向下转型downcasting转换
+ * 	基类对象指针（引用）可用强制类型转换为派生类对象指针（引用），而基类对象无法执行这类转换
+ *	向下转型不安全，没有自动转换的机制
  */
 
 /*
