@@ -129,7 +129,7 @@ ostream& operator<< (ostream& os, const String& obj){
 istream& operator>> (istream& is, String& obj){
 	//cout<<"istream& operator>> (istream& is, String& obj)"<<endl;
 	char tmp[1024];
-	cin>>tmp;
+	is>>tmp;
 	obj=tmp;
 	return is;
 }
