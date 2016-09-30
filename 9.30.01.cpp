@@ -20,6 +20,8 @@ class NodePtr{
 			delete ptr_;
 		};
 
+		NodePtr(NodePtr& other):ptr_(other.Release()){}
+
 		Node& operator* () const{
 			return *Get();
 		}
@@ -57,6 +59,9 @@ int main(int argc, char* argv[]){
 	NodePtr np(new Node);
 	np->Calc();
 
+	NodePtr np2(np);
+
+	NodePtr np3=np;
 	return 0;
 }
 
@@ -74,5 +79,6 @@ void Node::Calc() const{
 
 /*
  * 裸指针
+ *
  * 解决空悬指针，内存泄露，重复释放等问题
  */
