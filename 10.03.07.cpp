@@ -64,3 +64,7 @@ int main(int argc,char* argv[]){
 	Application::GetInstance().Run();
 	return 0;
 }
+
+/*
+ * 目前的单例模式并不属于线程安全，即如果多个线程同时操作的话，会导致单例模式失效
+ */
