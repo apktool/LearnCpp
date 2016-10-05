@@ -1,6 +1,6 @@
 /**
  * @file 10.05.02.cpp
- * @brief 算法|for_each,min_element,max_element,find_if
+ * @brief 非变动性算法|for_each,min_element,max_element,find_if
  * @author LiWenGang
  * @date 2016-10-05
  */
