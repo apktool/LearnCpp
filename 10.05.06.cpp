@@ -1,6 +1,6 @@
 /**
  * @file 10.05.06.cpp
- * @brief 算法|移除性算法
+ * @brief 移除性算法|remove
  * @author LiWenGang
  * @date 2016-10-05
  */
