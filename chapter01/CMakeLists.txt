@@ -27,3 +27,18 @@ add_executable(
         src/medium/FileDemo.h src/medium/FileDemo.cc
         src/medium/TemplateDemo.h src/medium/TemplateDemo.cc
 )
+
+add_executable(
+        app-advance.so
+        src/AppAdvance.h src/AppAdvance.cc
+        src/advance/StringDemo.h src/advance/StringDemo.cc
+        src/advance/VectorDemo.h src/advance/VectorDemo.cc
+        src/advance/DequeDemo.h src/advance/DequeDemo.cc
+        src/advance/StackDemo.h src/advance/StackDemo.cc
+        src/advance/QueueDemo.h src/advance/QueueDemo.cc
+        src/advance/ListDemo.h src/advance/ListDemo.cc
+        src/advance/SetDemo.h src/advance/SetDemo.cc
+        src/advance/PairDemo.h src/advance/PairDemo.cc
+        src/advance/MapDemo.h src/advance/MapDemo.cc
+        src/advance/FunctionalDemo.h src/advance/FunctionalDemo.cc
+)
