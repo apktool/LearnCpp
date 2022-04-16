@@ -15,3 +15,15 @@ add_executable(
         src/basic/PointDemo.h src/basic/PointDemo.cc
         src/basic/ReferenceDemo.h src/basic/ReferenceDemo.cc
 )
+
+add_executable(
+        app-medium.so
+        src/AppMedium.h src/AppMedium.cc
+        src/medium/StructDemo.h src/medium/StructDemo.cc
+        src/medium/FunctionExamp.h src/medium/FunctionExamp.cc
+        src/medium/ClassDemo.h src/medium/ClassDemo.cc
+        src/medium/InheritDemo.h src/medium/InheritDemo.cc
+        src/medium/VirtualDemo.h src/medium/VirtualDemo.cc
+        src/medium/FileDemo.h src/medium/FileDemo.cc
+        src/medium/TemplateDemo.h src/medium/TemplateDemo.cc
+)
