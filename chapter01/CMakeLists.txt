@@ -41,4 +41,17 @@ add_executable(
         src/advance/PairDemo.h src/advance/PairDemo.cc
         src/advance/MapDemo.h src/advance/MapDemo.cc
         src/advance/FunctionalDemo.h src/advance/FunctionalDemo.cc
+        src/AppAlgorithm.cc src/AppAlgorithm.h
+)
+
+add_executable(
+        app-algorithm.so
+        src/AppAlgorithm.h src/AppAlgorithm.cc
+        src/algorithm/TraverseDemo.h src/algorithm/TraverseDemo.cc
+        src/algorithm/FindDemo.h src/algorithm/FindDemo.cc
+        src/algorithm/AggDemo.h src/algorithm/AggDemo.cc
+        src/algorithm/SortDemo.h src/algorithm/SortDemo.cc
+        src/algorithm/ReplaceDemo.h src/algorithm/ReplaceDemo.cc
+        src/algorithm/ArithmeticDemo.h src/algorithm/ArithmeticDemo.cc
+        src/algorithm/CollectionDemo.h src/algorithm/CollectionDemo.cc
 )
