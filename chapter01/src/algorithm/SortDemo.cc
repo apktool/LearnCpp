@@ -10,7 +10,7 @@ void SortDemo::testSort() {
     vector.push_back(1);
     vector.push_back(2);
 
-    std::sort(vector.begin(), vector.end(), std::greater());
+    std::sort(vector.begin(), vector.end(), std::greater<int>());
 
     for (const auto &item: vector) {
         std::cout << item << " ";
@@ -23,13 +23,6 @@ void SortDemo::testRandomShuffle() {
     for (int i = 0; i < 10; i++) {
         vector.push_back(i);
     }
-
-    srand((unsigned int) time(NULL));
-    std::random_shuffle(vector.begin(), vector.end());
-    for (const auto &item: vector) {
-        std::cout << item << " ";
-    }
-    std::cout << std::endl;
 }
 
 /*

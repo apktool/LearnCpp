@@ -41,7 +41,6 @@ add_executable(
         src/advance/PairDemo.h src/advance/PairDemo.cc
         src/advance/MapDemo.h src/advance/MapDemo.cc
         src/advance/FunctionalDemo.h src/advance/FunctionalDemo.cc
-        src/AppAlgorithm.cc src/AppAlgorithm.h
 )
 
 add_executable(

@@ -6,6 +6,7 @@
 #define CHAPTER01_COLLECTIONDEMO_H
 
 #include "iostream"
+#include "vector"
 #include "algorithm"
 
 class CollectionDemo {

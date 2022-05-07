@@ -6,6 +6,7 @@
 #define CHAPTER01_AGGDEMO_H
 
 #include "iostream"
+#include "vector"
 #include "algorithm"
 
 class AggDemo {

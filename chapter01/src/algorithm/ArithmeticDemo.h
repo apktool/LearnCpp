@@ -6,6 +6,7 @@
 #define CHAPTER01_ARITHMETICDEMO_H
 
 #include "iostream"
+#include "vector"
 #include "algorithm"
 #include "numeric"
 

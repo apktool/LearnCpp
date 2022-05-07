@@ -27,7 +27,7 @@ void FunctionalDemo::testBasic() {
     }
     std::cout << std::endl;
 
-    std::sort(vector1.begin(), vector1.end(), std::greater());
+    std::sort(vector1.begin(), vector1.end(), std::greater<int>());
     for (const auto &item: vector1) {
         std::cout << item << " ";
     }
