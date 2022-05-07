@@ -15,5 +15,6 @@
 #include "advance/ListDemo.h"
 #include "advance/SetDemo.h"
 #include "advance/MapDemo.h"
+#include "advance/NameSpaceDemo.h"
 
 #endif //CHAPTER01_APPADVANCE_H

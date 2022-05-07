@@ -80,4 +80,12 @@ int main(int argc, char *argv[]) {
     std::cout << "MapDemo" << std::endl;
     MapDemo mapDemo;
     mapDemo.testBasic();
+
+    /**
+     * namespace
+     */
+    std::cout << "NameSpaceDemo" << std::endl;
+    ns::NameSpaceDemo nameSpaceDemo;
+    nameSpaceDemo.testBasic();
+    nameSpaceDemo.testMedium();
 }
