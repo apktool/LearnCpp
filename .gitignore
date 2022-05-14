@@ -32,6 +32,8 @@
 *.app
 
 # Cmake
+build/
+target/
 Testing/
 cmake-build-debug/
 CMakeFiles/
