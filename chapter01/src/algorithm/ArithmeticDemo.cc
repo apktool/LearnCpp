@@ -25,3 +25,23 @@ void ArithmeticDemo::testFill() {
 
     std::cout << std::endl;
 }
+void ArithmeticDemo::testMapSort() {
+    std::unordered_map<uint64_t, std::vector<std::string>> map;
+    map[1].push_back("hello");
+    map[1].push_back("world");
+
+    map[2].push_back("hi");
+    map[2].push_back("c++");
+
+   auto iter = std::max_element(map.begin(), map.end(), [](
+                                          auto& a,
+                                          auto& b
+                                      ) -> bool { return a.first < b.first; }
+    );
+
+   std::stringstream value;
+   for (auto& item: iter->second) {
+      value << item << ",";
+   }
+   std::cout << iter->first << ":" << value.str() << std::endl;
+}

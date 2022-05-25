@@ -6,7 +6,10 @@
 #define CHAPTER01_ARITHMETICDEMO_H
 
 #include "iostream"
+#include "string"
+#include "sstream"
 #include "vector"
+#include "unordered_map"
 #include "algorithm"
 #include "numeric"
 
@@ -15,6 +18,8 @@ public:
     void testAccumulate();
 
     void testFill();
+
+    void testMapSort();
 };
 
 

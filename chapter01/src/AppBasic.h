@@ -12,5 +12,6 @@
 #include "basic/FunctionDemo.h"
 #include "basic/PointDemo.h"
 #include "basic/ReferenceDemo.h"
+#include "basic/EnumDemo.h"
 
 #endif //CHAPTER02_APP_H

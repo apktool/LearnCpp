@@ -14,6 +14,7 @@ add_executable(
         src/basic/FunctionDemo.h src/basic/FunctionDemo.cc
         src/basic/PointDemo.h src/basic/PointDemo.cc
         src/basic/ReferenceDemo.h src/basic/ReferenceDemo.cc
+        src/basic/EnumDemo.h src/basic/EnumDemo.cc
 )
 
 add_executable(

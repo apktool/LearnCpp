@@ -65,5 +65,13 @@ int main(int argc, char **argv) {
     ReferenceDemo referenceDemo;
     referenceDemo.testReference();
 
-    return 0;
+    /**
+     * EnumDemo
+     */
+  std::cout << "Enumerate" << std::endl;
+  EnumDemo enumDemo;
+  enumDemo.testUnscopedEnum();
+  enumDemo.testScopedEnum();
+
+  return 0;
 }
