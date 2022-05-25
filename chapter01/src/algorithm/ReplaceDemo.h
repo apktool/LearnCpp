@@ -10,15 +10,14 @@
 #include "algorithm"
 
 class ReplaceDemo {
-public:
-    void testCopy();
+ public:
+  void testCopy();
 
-    void testReplace();
+  void testReplace();
 
-    void testReplaceIf();
+  void testReplaceIf();
 
-    void testSwap();
+  void testSwap();
 };
-
 
 #endif //CHAPTER01_REPLACEDEMO_H

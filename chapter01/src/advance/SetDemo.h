@@ -9,11 +9,10 @@
 #include "set"
 
 class SetDemo {
-public:
-    void testBasic();
+ public:
+  void testBasic();
 
-    void testMedium();
+  void testMedium();
 };
-
 
 #endif //CHAPTER01_SETDEMO_H

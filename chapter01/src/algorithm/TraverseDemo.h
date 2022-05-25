@@ -10,11 +10,10 @@
 #include "algorithm"
 
 class TraverseDemo {
-public:
-    void testForEach();
+ public:
+  void testForEach();
 
-    void testTransform();
+  void testTransform();
 };
-
 
 #endif //CHAPTER01_TRAVERSEDEMO_H

@@ -8,15 +8,14 @@
 #include<iostream>
 
 class PointDemo {
-public:
-    void testBasic();
+ public:
+  void testBasic();
 
-    void testPoint();
+  void testPoint();
 
-    void testArray();
+  void testArray();
 
-    void testFunction();
+  void testFunction();
 };
-
 
 #endif //CHAPTER02_POINTDEMO_H

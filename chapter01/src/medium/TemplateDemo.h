@@ -8,11 +8,10 @@
 #include "iostream"
 
 class TemplateDemo {
-public:
-    void testFunction();
+ public:
+  void testFunction();
 
-    void testClass();
+  void testClass();
 };
-
 
 #endif //CHAPTER01_TEMPLATEDEMO_H

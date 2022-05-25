@@ -9,9 +9,8 @@
 #include "queue"
 
 class QueueDemo {
-public:
-    void testBasic();
+ public:
+  void testBasic();
 };
-
 
 #endif //CHAPTER01_QUEUEDEMO_H

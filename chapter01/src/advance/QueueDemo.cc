@@ -5,15 +5,15 @@
 #include "QueueDemo.h"
 
 void QueueDemo::testBasic() {
-    std::queue<int> queue1;
+  std::queue<int> queue1;
 
-    for (int i = 0; i < 10; ++i) {
-        queue1.push(i);
-    }
+  for (int i = 0; i < 10; ++i) {
+    queue1.push(i);
+  }
 
-    while (!queue1.empty()) {
-        std::cout << queue1.front() << " ";
-        queue1.pop();
-    }
-    std::cout << std::endl;
+  while (!queue1.empty()) {
+    std::cout << queue1.front() << " ";
+    queue1.pop();
+  }
+  std::cout << std::endl;
 }

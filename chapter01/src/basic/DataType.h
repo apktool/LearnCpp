@@ -8,16 +8,16 @@
 #include "iostream"
 
 class DataType {
-public:
-    void testInteger();
+ public:
+  void testInteger();
 
-    void testFloat();
+  void testFloat();
 
-    void testDouble();
+  void testDouble();
 
-    void testString();
+  void testString();
 
-    void testBoolean();
+  void testBoolean();
 };
 
 #endif // CHAPTER02_DATATYPE_H

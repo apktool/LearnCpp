@@ -8,11 +8,10 @@
 #include "iostream"
 
 class ArrayDemo {
-public:
-    void testOneDimArray();
+ public:
+  void testOneDimArray();
 
-    void testTwoDimArray();
+  void testTwoDimArray();
 };
-
 
 #endif //CHAPTER02_ARRAYDEMO_H

@@ -10,11 +10,10 @@
 #include "algorithm"
 
 class AggDemo {
-public:
-    void testCount();
+ public:
+  void testCount();
 
-    void testCountIf();
+  void testCountIf();
 };
-
 
 #endif //CHAPTER01_AGGDEMO_H

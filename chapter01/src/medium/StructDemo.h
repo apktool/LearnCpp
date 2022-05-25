@@ -9,21 +9,20 @@
 #include "string"
 
 struct Student {
-    int id;
-    std::string name;
-    int age;
+  int id;
+  std::string name;
+  int age;
 };
 
 class StructDemo {
-public:
-    void testStruct1();
+ public:
+  void testStruct1();
 
-    void testStruct2();
+  void testStruct2();
 
-    void testStructArray();
+  void testStructArray();
 
-    void testStructPoint();
+  void testStructPoint();
 };
-
 
 #endif //CHAPTER01_STRUCTDEMO_H

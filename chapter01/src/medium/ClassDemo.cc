@@ -10,38 +10,39 @@
 
 // 默认构造方法
 ClassDemo::ClassDemo() {
-    std::cout << "construct code" << std::endl;
+  std::cout << "construct code" << std::endl;
 }
 
 ClassDemo::~ClassDemo() {
-    std::cout << "deconstruct code" << std::endl;
+  std::cout << "deconstruct code" << std::endl;
 }
 
 // 带参构造方法
 ClassDemo::ClassDemo(std::string name) {
-    this->name = name;
+  this->name = name;
 }
 
 // 初始化列表
-ClassDemo::ClassDemo(std::string a, std::string b) : name("hello java"), className(b) {
+ClassDemo::ClassDemo(std::string a, std::string b)
+    : name("hello java"), className(b) {
 
 }
 
 std::string ClassDemo::getName() const {
-    return name;
+  return name;
 }
 
 void ClassDemo::setName(std::string name) {
-    this->name = name;
+  this->name = name;
 }
 
 void ClassDemo::setClassName() {
-    className = name + ", hello python";
+  className = name + ", hello python";
 }
 
 std::string SubClassDemo::getClassName() {
-    setName("hello c++");
-    setClassName();
+  setName("hello c++");
+  setClassName();
 
-    return this->className;
+  return this->className;
 }

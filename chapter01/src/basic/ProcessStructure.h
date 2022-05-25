@@ -9,14 +9,14 @@
 #include "random"
 
 class ProcessStructure {
-public:
-    void testIf();
+ public:
+  void testIf();
 
-    void testWhile();
+  void testWhile();
 
-    void testFor();
+  void testFor();
 
-    void testSwitch();
+  void testSwitch();
 };
 
 #endif //CHAPTER02_PROCESSSTRUCTURE_H

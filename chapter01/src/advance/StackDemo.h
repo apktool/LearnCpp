@@ -9,9 +9,8 @@
 #include "stack"
 
 class StackDemo {
-public:
-    void testBasic();
+ public:
+  void testBasic();
 };
-
 
 #endif //CHAPTER01_STACKDEMO_H

@@ -8,13 +8,12 @@
 #include "iostream"
 
 class FunctionDemo {
-public:
-    void passByValue();
+ public:
+  void passByValue();
 
-    void passByReference();
+  void passByReference();
 
-    void passByAddress();
+  void passByAddress();
 };
-
 
 #endif //CHAPTER02_FUNCTIONDEMO_H

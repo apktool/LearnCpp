@@ -9,9 +9,8 @@
 #include "string"
 
 class PairDemo {
-public:
-    void testBasic();
+ public:
+  void testBasic();
 };
-
 
 #endif //CHAPTER01_PAIRDEMO_H

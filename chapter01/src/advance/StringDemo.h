@@ -9,11 +9,10 @@
 #include "string"
 
 class StringDemo {
-public:
-    void testBasic();
+ public:
+  void testBasic();
 
-    void testMedium();
+  void testMedium();
 };
-
 
 #endif //CHAPTER01_STRINGDEMO_H

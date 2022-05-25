@@ -16,31 +16,31 @@
  */
 
 class ClassDemo {
-public:
-    virtual ~ClassDemo();
+ public:
+  virtual ~ClassDemo();
 
-    ClassDemo();
+  ClassDemo();
 
-    ClassDemo(std::string name);
+  ClassDemo(std::string name);
 
-    ClassDemo(std::string name, std::string className);
+  ClassDemo(std::string name, std::string className);
 
-    std::string getName() const;
+  std::string getName() const;
 
-    void setName(std::string name);
+  void setName(std::string name);
 
-    void setClassName();
+  void setClassName();
 
-protected:
-    std::string className;
+ protected:
+  std::string className;
 
-private:
-    std::string name;
+ private:
+  std::string name;
 };
 
 class SubClassDemo : public ClassDemo {
-public:
-    std::string getClassName();
+ public:
+  std::string getClassName();
 };
 
 #endif //CHAPTER01_CLASSDEMO_H

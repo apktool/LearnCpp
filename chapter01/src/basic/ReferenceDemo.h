@@ -8,8 +8,8 @@
 #include "iostream"
 
 class ReferenceDemo {
-public:
-    void testReference();
+ public:
+  void testReference();
 };
 
 #endif //CHAPTER01_REFERENCEDEMO_H

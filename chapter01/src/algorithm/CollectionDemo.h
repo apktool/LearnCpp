@@ -10,13 +10,12 @@
 #include "algorithm"
 
 class CollectionDemo {
-public:
-    void testIntersection();
+ public:
+  void testIntersection();
 
-    void testUnion();
+  void testUnion();
 
-    void testDifference();
+  void testDifference();
 };
-
 
 #endif //CHAPTER01_COLLECTIONDEMO_H

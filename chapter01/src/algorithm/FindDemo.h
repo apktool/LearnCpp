@@ -10,15 +10,14 @@
 #include "algorithm"
 
 class FindDemo {
-public:
-    void testFind();
+ public:
+  void testFind();
 
-    void testFindIf();
+  void testFindIf();
 
-    void testAdjacentFind();
+  void testAdjacentFind();
 
-    void testBinarySearch();
+  void testBinarySearch();
 };
-
 
 #endif //CHAPTER01_FINDDEMO_H

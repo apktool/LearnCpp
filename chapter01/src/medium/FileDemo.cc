@@ -5,32 +5,32 @@
 #include "FileDemo.h"
 
 void FileDemo::write(std::string filename) {
-    std::ofstream ofs;
+  std::ofstream ofs;
 
-    ofs.open(filename, std::ios::out);
-    ofs << "name: li" << std::endl;
-    ofs << "sex: male" << std::endl;
-    ofs << "age: 18" << std::endl;
+  ofs.open(filename, std::ios::out);
+  ofs << "name: li" << std::endl;
+  ofs << "sex: male" << std::endl;
+  ofs << "age: 18" << std::endl;
 
-    ofs.close();
+  ofs.close();
 }
 
 void FileDemo::read(std::string filename) {
-    std::ifstream ifs;
+  std::ifstream ifs;
 
-    ifs.open(filename, std::ios::in);
+  ifs.open(filename, std::ios::in);
 
-    if (!ifs.is_open()) {
-        std::cout << "File Open Filed" << std::endl;
-        return;
-    }
+  if (!ifs.is_open()) {
+    std::cout << "File Open Filed" << std::endl;
+    return;
+  }
 
-    std::string buffer;
-    while (getline(ifs, buffer)) {
-        this->content += buffer;
-    }
+  std::string buffer;
+  while (getline(ifs, buffer)) {
+    this->content += buffer;
+  }
 
-    ifs.close();
+  ifs.close();
 
-    std::cout << this->content << std::endl;
+  std::cout << this->content << std::endl;
 }

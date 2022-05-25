@@ -10,15 +10,15 @@
 #include "map"
 
 class MapDemo {
-public:
-    void testBasic();
+ public:
+  void testBasic();
 };
 
 class MapCompare {
-public:
-    bool operator()(const std::string &a, const std::string &b) const {
-        return b.compare(a);
-    }
+ public:
+  bool operator()(const std::string& a, const std::string& b) const {
+    return b.compare(a);
+  }
 };
 
 #endif //CHAPTER01_MAPDEMO_H

@@ -11,22 +11,21 @@
 #include "functional"
 
 class FuncCompare {
-public:
-    bool operator()(int v) {
-        return v > 1;
-    }
+ public:
+  bool operator()(int v) {
+    return v > 1;
+  }
 
-    bool operator()(int v1, int v2) {
-        return v1 > v2;
-    }
+  bool operator()(int v1, int v2) {
+    return v1 > v2;
+  }
 };
 
 class FunctionalDemo {
-public:
-    void testBasic();
+ public:
+  void testBasic();
 
-    void testMedium();
+  void testMedium();
 };
-
 
 #endif //CHAPTER01_FUNCTIONALDEMO_H

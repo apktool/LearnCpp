@@ -9,14 +9,13 @@
 #include "fstream"
 
 class FileDemo {
-public:
-    void write(std::string filename);
+ public:
+  void write(std::string filename);
 
-    void read(std::string filename);
+  void read(std::string filename);
 
-private:
-    std::string content;
+ private:
+  std::string content;
 };
-
 
 #endif //CHAPTER01_FILEDEMO_H

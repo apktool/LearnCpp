@@ -14,13 +14,12 @@
 #include "numeric"
 
 class ArithmeticDemo {
-public:
-    void testAccumulate();
+ public:
+  void testAccumulate();
 
-    void testFill();
+  void testFill();
 
-    void testMapSort();
+  void testMapSort();
 };
-
 
 #endif //CHAPTER01_ARITHMETICDEMO_H

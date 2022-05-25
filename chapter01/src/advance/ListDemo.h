@@ -9,11 +9,10 @@
 #include "list"
 
 class ListDemo {
-public:
-    void testBasic();
+ public:
+  void testBasic();
 
-    void testMedium();
+  void testMedium();
 };
-
 
 #endif //CHAPTER01_LISTDEMO_H

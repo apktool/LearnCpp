@@ -11,15 +11,14 @@
 #include "ctime"
 
 class SortDemo {
-public:
-    void testSort();
+ public:
+  void testSort();
 
-    void testRandomShuffle();
+  void testRandomShuffle();
 
-    void testMerge();
+  void testMerge();
 
-    void testReverse();
+  void testReverse();
 };
-
 
 #endif //CHAPTER01_SORTDEMO_H

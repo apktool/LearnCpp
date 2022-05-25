@@ -8,11 +8,10 @@
 #include "iostream"
 
 class FunctionExamp {
-public:
-    void testDefaultParams();
+ public:
+  void testDefaultParams();
 
-    void testPlaceholders();
+  void testPlaceholders();
 };
-
 
 #endif //CHAPTER01_FUNCTIONEXAMP_H

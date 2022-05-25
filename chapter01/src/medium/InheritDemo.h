@@ -11,38 +11,44 @@
 using std::string;
 
 class InheritDemo {
-public:
-    InheritDemo();
+ public:
+  InheritDemo();
 
-    InheritDemo(const string &publicString, const string &protectedString, const string &privateString);
+  InheritDemo(const string& publicString,
+              const string& protectedString,
+              const string& privateString);
 
-    string publicString;
+  string publicString;
 
-    void say();
+  void say();
 
-protected:
-    string protectedString;
-private:
-    string privateString;
+ protected:
+  string protectedString;
+ private:
+  string privateString;
 };
 
 class Inherit1 : virtual public InheritDemo {
-public:
-    Inherit1();
+ public:
+  Inherit1();
 
-    Inherit1(const string &publicString, const string &protectedString, const string &privateString);
+  Inherit1(const string& publicString,
+           const string& protectedString,
+           const string& privateString);
 };
 
 class Inherit2 : virtual public InheritDemo {
-public:
-    Inherit2();
+ public:
+  Inherit2();
 
-    Inherit2(const string &publicString, const string &protectedString, const string &privateString);
+  Inherit2(const string& publicString,
+           const string& protectedString,
+           const string& privateString);
 };
 
 class Inherit : public Inherit1, public Inherit2 {
-public:
-    Inherit();
+ public:
+  Inherit();
 };
 
 #endif //CHAPTER01_INHERITDEMO_H

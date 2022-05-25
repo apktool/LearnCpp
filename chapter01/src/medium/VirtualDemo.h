@@ -9,22 +9,22 @@
 #include "string"
 
 class VirtualDemo {
-public:
-    virtual void say();
+ public:
+  virtual void say();
 
-    virtual ~VirtualDemo() = 0;
+  virtual ~VirtualDemo() = 0;
 };
 
 class Virtual1 : public VirtualDemo {
-public:
-    void say();
+ public:
+  void say();
 };
 
 class Virtual2 : public VirtualDemo {
-public:
-    void say();
+ public:
+  void say();
 };
 
-void virtualFunc(VirtualDemo &demo);
+void virtualFunc(VirtualDemo& demo);
 
 #endif //CHAPTER01_VIRTUALDEMO_H
