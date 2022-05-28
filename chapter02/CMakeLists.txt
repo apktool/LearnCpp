@@ -1,0 +1,9 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.21)
+PROJECT(chapter02)
+
+MESSAGE("C++ Primer 5th - section 8th")
+
+SET(CMAKE_CXX_STANDARD 20)
+
+FILE(GLOB_RECURSE section08 ${PROJECT_SOURCE_DIR}/src/io "*.h" "*.cc")
+ADD_EXECUTABLE(io.out ${section08})
