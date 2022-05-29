@@ -1,25 +1,16 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.21)
-PROJECT(dt-demo VERSION 1.0.0)
+PROJECT(chapter02)
 
-MESSAGE(${PROJECT_NAME}-${PROJECT_VERSION})
+MESSAGE("C++ Primer 5th - section 8th ~ 12th")
 
 SET(CMAKE_CXX_STANDARD 20)
-SET(dt_demo_root_dir ${PROJECT_SOURCE_DIR})
-SET(dt_demo_execute_file_name dt-demo.out)
-SET(dt_demo_source_binary_file_name dt-demo-source.a)
 
-OPTION(dt_demo_test "DT_DEMO TEST BUILD" ON)
+FILE(GLOB_RECURSE source "*.h" "*.cc")
 
-ADD_SUBDIRECTORY(src)
+SET(section08 ${source})
+LIST(FILTER section08 INCLUDE REGEX "src/io")
+ADD_EXECUTABLE(io.out ${section08})
 
-if (${dt_demo_test})
-    ADD_SUBDIRECTORY(third_party)
-    ADD_SUBDIRECTORY(test)
-endif ()
-
-# FILE(GLOB_RECURSE dt_demo_source_dir RELATIVE ${dt_demo_root_dir} "*.cc" "*.h")
-# LIST(FILTER dt_demo_source_dir EXCLUDE REGEX "test")
-# LIST(FILTER dt_demo_source_dir EXCLUDE REGEX "third_party")
-# LIST(FILTER dt_demo_source_dir EXCLUDE REGEX "build")
-
-# ADD_EXECUTABLE(${dt_demo_execute_file_name} ${dt_demo_source_binary_file_name})
+SET(section09 ${source})
+LIST(FILTER section09 INCLUDE REGEX "src/container")
+ADD_EXECUTABLE(container.out ${section09})
