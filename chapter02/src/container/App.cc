@@ -4,6 +4,7 @@
 
 #include "sequence/seq_demo.h"
 #include "adaptor/adaptor_demo.h"
+#include "associative/ass_demo.h"
 
 int main(int argc, char* argv[]) {
   /**
@@ -24,4 +25,17 @@ int main(int argc, char* argv[]) {
   AdaptorDemo adaptor_demo;
   adaptor_demo.testStack();
   adaptor_demo.testQueue();
+
+  /**
+   * associative container
+   */
+  AssDemo ass_demo;
+  ass_demo.testMap();
+  ass_demo.testMultiMap();
+  ass_demo.testUnorderedMap();
+  ass_demo.testUnorderedMultiMap();
+  ass_demo.testSet();
+  ass_demo.testMultiSet();
+  ass_demo.testUnorderedSet();
+  ass_demo.testUnorderedMultiSet();
 }
