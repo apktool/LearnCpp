@@ -1,6 +1,7 @@
 #include "algorithm/alg_demo.h"
 #include "lambda/lambda_demo.h"
 #include "lambda/bind_demo.h"
+#include "iterator/iterator_demo.h"
 
 int main(int argc, char* argv[]) {
   /**
@@ -26,6 +27,14 @@ int main(int argc, char* argv[]) {
    */
   BindDemo bind_demo;
   bind_demo.testBind();
+
+  /**
+   * iterator
+   */
+  IteratorDemo iterator_demo;
+  iterator_demo.testInsert();
+  iterator_demo.testIostream();
+  iterator_demo.testReverse();
 
   return 0;
 }
