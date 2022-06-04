@@ -18,3 +18,7 @@ ADD_EXECUTABLE(container.out ${section09})
 SET(section10 ${source})
 LIST(FILTER section10 INCLUDE REGEX "src/generic")
 ADD_EXECUTABLE(algorithm.out ${section10})
+
+SET(section12 ${source})
+LIST(FILTER section12 INCLUDE REGEX "src/dynmem")
+ADD_EXECUTABLE(smart.out ${section12})
