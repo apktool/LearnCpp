@@ -4,6 +4,8 @@ PROJECT(chapter03)
 MESSAGE("C++ Primer 5th - section 13th ~ 16th")
 
 SET(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_FLAGS "-fno-elide-constructors ${CMAKE_CXX_FLAGS}")
+# ADD_COMPILE_OPTIONS(-fno-elide-constructors)
 
 FILE(GLOB_RECURSE source "*.h" "*.cc")
 
