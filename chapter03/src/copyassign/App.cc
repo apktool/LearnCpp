@@ -1,5 +1,6 @@
 #include "control/copy_cst.h"
 #include "control/cst_demo.h"
+#include "reference/ref_demo.h"
 
 namespace {
 CstDemo GetCstDemo() {
@@ -57,4 +58,25 @@ int main(int argc, char* argv[]) {
 
   std::cout << "----> cst" << std::endl;
   cst2 = CstDemo(99);
+
+  /**
+   * reference
+   */
+  std::string s_ref = "hello world";
+  RefDemo ref_demo(s_ref);
+
+  RefDemo ref_demo_1(s_ref);
+  ref_demo.ref(ref_demo_1);
+  std::cout << ref_demo.getStr() << std::endl;
+  ref_demo.ref(std::move(ref_demo_1));
+  std::cout << ref_demo.getStr() << std::endl;
+
+  std::cout << ref_demo.test(s_ref).getStr() << std::endl;
+  std::cout << std::move(ref_demo).test(s_ref).getStr() << std::endl;
+
+  RefDemo ref_demo_2(s_ref);
+  ref_demo = ref_demo_2;
+  std::cout << ref_demo.getStr() << std::endl;
+  std::move(ref_demo) = ref_demo_2;
+  std::cout << ref_demo.getStr() << std::endl;
 }
