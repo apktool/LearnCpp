@@ -12,3 +12,7 @@ FILE(GLOB_RECURSE source "*.h" "*.cc")
 SET(section13 ${source})
 LIST(FILTER section13 INCLUDE REGEX "src/copyassign")
 ADD_EXECUTABLE(copyctrl.out ${section13})
+
+SET(section14 ${source})
+LIST(FILTER section14 INCLUDE REGEX "src/overload")
+ADD_EXECUTABLE(overload.out ${section14})
