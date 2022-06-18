@@ -26,4 +26,10 @@ int main(int argc, char* argv[]) {
    */
   UnionDemo union_demo;
   union_demo.testUnion();
+
+  /**
+   * bit field
+   */
+  BitFieldDemo bit_field_demo;
+  bit_field_demo.testBitField();
 }
