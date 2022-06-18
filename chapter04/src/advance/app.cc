@@ -1,6 +1,7 @@
 #include "pointer/member_demo.h"
 #include "union/union_demo.h"
 #include "bitfield/bit_field.h"
+#include "volatile/volatile_demo.h"
 
 int main(int argc, char* argv[]) {
   /**
@@ -32,4 +33,10 @@ int main(int argc, char* argv[]) {
    */
   BitFieldDemo bit_field_demo;
   bit_field_demo.testBitField();
+
+  /**
+   * volatile
+   */
+  VolatileDemo volatile_demo;
+  volatile_demo.testVolatile();
 }
