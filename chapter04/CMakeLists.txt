@@ -13,3 +13,7 @@ ADD_EXECUTABLE(stl.out ${section17})
 SET(section18 ${source})
 LIST(FILTER section18 INCLUDE REGEX "src/tool")
 ADD_EXECUTABLE(tool.out ${section18})
+
+SET(section19 ${source})
+LIST(FILTER section19 INCLUDE REGEX "src/advance")
+ADD_EXECUTABLE(sptool.out ${section19})
