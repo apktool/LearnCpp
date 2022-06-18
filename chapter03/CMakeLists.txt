@@ -16,3 +16,7 @@ ADD_EXECUTABLE(copyctrl.out ${section13})
 SET(section14 ${source})
 LIST(FILTER section14 INCLUDE REGEX "src/overload")
 ADD_EXECUTABLE(overload.out ${section14})
+
+SET(section15 ${source})
+LIST(FILTER section15 INCLUDE REGEX "src/object")
+ADD_EXECUTABLE(object.out ${section15})
