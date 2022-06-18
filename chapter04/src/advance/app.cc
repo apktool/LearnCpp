@@ -20,4 +20,10 @@ int main(int argc, char* argv[]) {
   MemberDemo* p = &member_demo;
   int res = (p->*pFun)(5);
   std::cout << res << std::endl;
+
+  /**
+   * union
+   */
+  UnionDemo union_demo;
+  union_demo.testUnion();
 }
