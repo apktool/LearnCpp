@@ -2,6 +2,7 @@
 #include "demo/bitset_test.h"
 #include "demo/regex_test.h"
 #include "demo/random_test.h"
+#include "demo/reference_test.h"
 
 int main(int argc, char* argv[]) {
   std::cout << "------- tuple ---------" << std::endl;
@@ -21,4 +22,8 @@ int main(int argc, char* argv[]) {
   random_test.testBasic();
   random_test.testNormal();
   random_test.testBerno();
+
+  std::cout << "------- reference ---------" << std::endl;
+  ReferenceTest reference_test;
+  reference_test.testBasic();
 }
