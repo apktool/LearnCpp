@@ -2,6 +2,7 @@
  * @author 李汶钢6306278
  * @date 2022-05-25 10:49:00
  */
+#include <iostream>
 #include "EnumDemo.h"
 
 void EnumDemo::testUnscopedEnum() {

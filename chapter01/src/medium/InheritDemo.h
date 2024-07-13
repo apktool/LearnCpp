@@ -5,8 +5,8 @@
 #ifndef CHAPTER01_INHERITDEMO_H
 #define CHAPTER01_INHERITDEMO_H
 
-#include "iostream"
-#include "string"
+#include <iostream>
+#include <string>
 
 using std::string;
 

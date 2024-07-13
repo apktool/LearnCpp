@@ -5,10 +5,6 @@
 #ifndef CHAPTER01_REPLACEDEMO_H
 #define CHAPTER01_REPLACEDEMO_H
 
-#include "iostream"
-#include "vector"
-#include "algorithm"
-
 class ReplaceDemo {
  public:
   void testCopy();

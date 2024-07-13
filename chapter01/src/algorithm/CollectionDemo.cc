@@ -2,6 +2,9 @@
 // Created by li on 4/26/22.
 //
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
 #include "CollectionDemo.h"
 
 void CollectionDemo::testIntersection() {
@@ -23,7 +26,7 @@ void CollectionDemo::testIntersection() {
       vector2.begin(),
       vector2.end(),
       vector.begin()
-  );
+      );
 
   for (auto itr = vector.begin(); itr < it; ++itr) {
     std::cout << *itr << " ";
@@ -50,7 +53,7 @@ void CollectionDemo::testUnion() {
       vector2.begin(),
       vector2.end(),
       vector.begin()
-  );
+      );
 
   for (auto itr = vector.begin(); itr < it; ++itr) {
     std::cout << *itr << " ";
@@ -77,7 +80,7 @@ void CollectionDemo::testDifference() {
       vector2.begin(),
       vector2.end(),
       vector.begin()
-  );
+      );
 
   for (auto itr = vector.begin(); itr < it; ++itr) {
     std::cout << *itr << " ";

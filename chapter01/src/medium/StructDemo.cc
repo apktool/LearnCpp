@@ -2,6 +2,7 @@
 // Created by li on 4/10/22.
 //
 
+#include <iostream>
 #include "StructDemo.h"
 
 void StructDemo::testStruct1() {

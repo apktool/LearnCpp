@@ -4,6 +4,8 @@ PROJECT(chapter02)
 MESSAGE("C++ Primer 5th - section 8th ~ 12th")
 
 SET(CMAKE_CXX_STANDARD 20)
+SET(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g3 -ggdb")
+
 
 FILE(GLOB_RECURSE source "*.h" "*.cc")
 

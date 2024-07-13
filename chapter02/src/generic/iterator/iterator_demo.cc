@@ -1,3 +1,5 @@
+#include <cstdint>
+#include <iterator>
 #include "iterator_demo.h"
 
 void IteratorDemo::testInsert() {

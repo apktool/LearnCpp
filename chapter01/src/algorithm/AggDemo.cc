@@ -2,6 +2,9 @@
 // Created by li on 4/26/22.
 //
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
 #include "AggDemo.h"
 
 void AggDemo::testCount() {
@@ -19,7 +22,7 @@ void AggDemo::testCount() {
 }
 
 class CountIfCompare {
- public:
+public:
   bool operator()(int val) {
     return val > 5;
   }

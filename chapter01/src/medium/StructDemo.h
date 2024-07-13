@@ -5,8 +5,7 @@
 #ifndef CHAPTER01_STRUCTDEMO_H
 #define CHAPTER01_STRUCTDEMO_H
 
-#include "iostream"
-#include "string"
+#include <string>
 
 struct Student {
   int id;

@@ -1,5 +1,6 @@
 // #pragma once
 // Created by li on 2022-05-28.
+#include <cstdint>
 #include "seq_demo.h"
 
 namespace {

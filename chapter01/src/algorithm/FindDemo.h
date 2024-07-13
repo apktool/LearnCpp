@@ -5,9 +5,7 @@
 #ifndef CHAPTER01_FINDDEMO_H
 #define CHAPTER01_FINDDEMO_H
 
-#include "iostream"
-#include "vector"
-#include "algorithm"
+
 
 class FindDemo {
  public:

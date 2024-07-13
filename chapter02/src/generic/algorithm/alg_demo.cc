@@ -1,3 +1,9 @@
+#include <cstdint>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <numeric>
 #include "alg_demo.h"
 
 void AlgoDemo::testFind() {

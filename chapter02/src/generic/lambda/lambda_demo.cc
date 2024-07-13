@@ -1,4 +1,5 @@
 #include "lambda_demo.h"
+#include <cstdint>
 
 void LambdaDemo::testBasic() {
   auto f = [](auto& word) -> void { std::cout << word << " "; };

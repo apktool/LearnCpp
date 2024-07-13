@@ -1,9 +1,3 @@
-#include <iostream>
-#include <algorithm>
-#include <numeric>
-#include <vector>
-#include <string>
-
 class AlgoDemo {
  public:
   void testFind();

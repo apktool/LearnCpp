@@ -2,6 +2,7 @@
 // Created by li on 4/16/22.
 //
 
+#include <iostream>
 #include "VirtualDemo.h"
 
 void VirtualDemo::say() {

@@ -5,11 +5,6 @@
 #ifndef CHAPTER01_SORTDEMO_H
 #define CHAPTER01_SORTDEMO_H
 
-#include "iostream"
-#include "vector"
-#include "algorithm"
-#include "ctime"
-
 class SortDemo {
  public:
   void testSort();

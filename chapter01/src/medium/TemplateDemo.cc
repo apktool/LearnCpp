@@ -2,10 +2,11 @@
 // Created by li on 4/16/22.
 //
 
+#include <iostream>
 #include "TemplateDemo.h"
 
 // 函数模板
-template<typename T>
+template <typename T>
 void swap(T& a, T& b) {
   T tmp = a;
   a = b;
@@ -13,16 +14,17 @@ void swap(T& a, T& b) {
 }
 
 // 类模板
-template<class T>
+template <class T>
 class Node {
- public:
-  Node(T data, Node* next) : data(data), next(next) {}
+public:
+  Node(T data, Node* next) : data(data), next(next) {
+  }
 
   inline T getData() {
     return data;
   }
 
- private:
+private:
   T data;
   Node* next;
 };

@@ -5,7 +5,6 @@
 #ifndef CHAPTER01_TEMPLATEDEMO_H
 #define CHAPTER01_TEMPLATEDEMO_H
 
-#include "iostream"
 
 class TemplateDemo {
  public:

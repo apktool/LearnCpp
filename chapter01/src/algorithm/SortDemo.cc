@@ -2,6 +2,10 @@
 // Created by li on 4/26/22.
 //
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <functional>
 #include "SortDemo.h"
 
 void SortDemo::testSort() {
@@ -10,8 +14,14 @@ void SortDemo::testSort() {
   vector.push_back(1);
   vector.push_back(2);
 
-  std::sort(vector.begin(), vector.end(), std::greater<int>());
+  // Constrained algorithms
+  std::ranges::sort(vector, std::ranges::greater());
+  for (const auto& item : vector) {
+    std::cout << item << " ";
+  }
+  std::cout << std::endl;
 
+  std::sort(vector.begin(), vector.end(), std::less<int>());
   for (const auto& item : vector) {
     std::cout << item << " ";
   }

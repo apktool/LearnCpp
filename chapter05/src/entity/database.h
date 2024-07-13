@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <cstdint>
 
 namespace dt {
 class Database {

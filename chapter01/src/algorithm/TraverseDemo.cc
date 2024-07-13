@@ -2,6 +2,9 @@
 // Created by li on 4/26/22.
 //
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
 #include "TraverseDemo.h"
 
 void printForEach(int val) {
@@ -9,7 +12,7 @@ void printForEach(int val) {
 }
 
 class PrintForEach {
- public:
+public:
   void operator()(int val) {
     std::cout << val << " ";
   }
@@ -29,7 +32,7 @@ void TraverseDemo::testForEach() {
 }
 
 class MultiTransform {
- public:
+public:
   int operator()(int val) {
     return val * 100;
   }

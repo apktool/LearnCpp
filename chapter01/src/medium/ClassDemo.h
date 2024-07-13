@@ -21,7 +21,7 @@ class ClassDemo {
 
   ClassDemo();
 
-  ClassDemo(std::string name);
+  explicit ClassDemo(std::string name);
 
   ClassDemo(std::string name, std::string className);
 

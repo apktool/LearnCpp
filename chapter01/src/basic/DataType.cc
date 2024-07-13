@@ -2,6 +2,8 @@
 // Created by li on 4/9/22.
 //
 
+#include <iostream>
+#include <cstdint>
 #include "DataType.h"
 
 void DataType::testInteger() {
@@ -36,10 +38,10 @@ void DataType::testDouble() {
 }
 
 void DataType::testString() {
-  char* str1 = "Hello world";
+  const char* str1 = "Hello world";
   std::cout << str1 << "\t" << sizeof(str1) << std::endl;
 
-  char str2[] = "Hello world";
+  const char str2[] = "Hello world";
   std::cout << str2 << "\t" << sizeof(str2) << std::endl;
 
   std::string str3 = "Hello world";

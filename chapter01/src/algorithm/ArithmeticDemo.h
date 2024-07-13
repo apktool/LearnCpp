@@ -5,13 +5,7 @@
 #ifndef CHAPTER01_ARITHMETICDEMO_H
 #define CHAPTER01_ARITHMETICDEMO_H
 
-#include "iostream"
-#include "string"
-#include "sstream"
-#include "vector"
-#include "unordered_map"
-#include "algorithm"
-#include "numeric"
+
 
 class ArithmeticDemo {
  public:

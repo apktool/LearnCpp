@@ -5,10 +5,6 @@
 #ifndef CHAPTER01_TRAVERSEDEMO_H
 #define CHAPTER01_TRAVERSEDEMO_H
 
-#include "iostream"
-#include "vector"
-#include "algorithm"
-
 class TraverseDemo {
  public:
   void testForEach();

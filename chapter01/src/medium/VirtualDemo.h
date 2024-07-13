@@ -5,8 +5,6 @@
 #ifndef CHAPTER01_VIRTUALDEMO_H
 #define CHAPTER01_VIRTUALDEMO_H
 
-#include "iostream"
-#include "string"
 
 class VirtualDemo {
  public:
@@ -17,12 +15,12 @@ class VirtualDemo {
 
 class Virtual1 : public VirtualDemo {
  public:
-  void say();
+  void say() override;
 };
 
 class Virtual2 : public VirtualDemo {
  public:
-  void say();
+  void say() override;
 };
 
 void virtualFunc(VirtualDemo& demo);

@@ -2,6 +2,9 @@
 // Created by li on 4/26/22.
 //
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
 #include "ReplaceDemo.h"
 
 void ReplaceDemo::testCopy() {
@@ -36,7 +39,7 @@ void ReplaceDemo::testReplace() {
 }
 
 class ReplaceIfCompare {
- public:
+public:
   bool operator()(int val) {
     return val > 5;
   }
@@ -67,7 +70,9 @@ void ReplaceDemo::testSwap() {
     vector2.push_back(i);
   }
 
+  printf("%p %p\n", &vector1, &vector2);
   std::swap(vector1, vector2);
+  printf("%p %p\n", &vector1, &vector2);
 
   for (const auto& item : vector1) {
     std::cout << item << " ";

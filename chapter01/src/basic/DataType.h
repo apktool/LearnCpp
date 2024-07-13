@@ -5,10 +5,8 @@
 #ifndef CHAPTER02_DATATYPE_H
 #define CHAPTER02_DATATYPE_H
 
-#include "iostream"
-
 class DataType {
- public:
+public:
   void testInteger();
 
   void testFloat();

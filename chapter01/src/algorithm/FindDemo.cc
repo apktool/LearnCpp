@@ -2,6 +2,9 @@
 // Created by li on 4/26/22.
 //
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
 #include "FindDemo.h"
 
 void FindDemo::testFind() {
@@ -16,7 +19,7 @@ void FindDemo::testFind() {
 }
 
 class FindIfCompare {
- public:
+public:
   bool operator()(int val) {
     return val > 5;
   }
